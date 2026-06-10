@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Manager</title>
+    <style>
+        /* 기본적인 스타일 */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; }
+        button { padding: 10px; margin-top: 10px; cursor: pointer; }
+        .results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Manager</h1>
+        <nav>
+            <button onclick="navigate('expenses')">지출 관리</button>
+            <button onclick="navigate('goals')">목표 관리</button>
+            <button onclick="navigate('account')">사용자 계정</button>
+        </nav>
+        <div id="content" class="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
